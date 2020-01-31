@@ -7,6 +7,8 @@
     <title>Yahoo! Fantasy Basketball Tools</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="mainstyle.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-light bg-dark">
@@ -25,11 +27,19 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col col-md align-self-start">
-                <p>Test</p>
-                <button>Download .csv file</button>
+            <div class="col">
+                <form>
+                    <select class="form-control">
+                        <option>Week 1</option>
+                        <option>Week 2</option>
+                    </select>
+                </form>
+            </div>
+            <div class="col">
+                <button class="btn-primary btn-lg">Download .csv file</button>
             </div>
         </div>
     </div>
+
 </body>
 </html>

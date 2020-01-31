@@ -12,8 +12,9 @@ leagueId = "31821"
 """
 # OAuth resource transaction ex.
 # Send request for league resource
-uri = "https://fantasysports.yahooapis.com/fantasy/v2/team/nba.l." + leagueId
-oauth.session.get(uri) # XMLHttpRequest.response
+uri = "https://fantasysports.yahooapis.com/fantasy/v2/league/nba.l." + leagueId
+rsrc = oauth.session.get(uri) # XMLHttpRequest.response
+print(rsrc.text)
 """
 
 def set_league(newId):
@@ -23,7 +24,7 @@ def set_league(newId):
     """
     global leagueId
     leagueId = newId
-    uri = "https://fantasysports.yahooapis.com/fantasy/v2/team/nba.l." + leagueId
+    uri = "https://fantasysports.yahooapis.com/fantasy/v2/league/nba.l." + leagueId
     rsrc = oauth.session.get(uri)
     print(rsrc.text)
 
@@ -103,3 +104,4 @@ def write_stats():
             stats.append(val)
         writer.writerow({'Team':name, 'fgm/fga':stats[0], 'fg%':stats[1], 'ftm/fta':stats[2], 'ft%':stats[3], '3ptm':stats[4], 'pts':stats[5], 'reb':stats[6], 'ast':stats[7], 'stl':stats[8], 'blk':stats[9], 'to':stats[10]})
 
+write_stats()

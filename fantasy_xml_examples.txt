@@ -123,3 +123,39 @@ ast     : 16
 stl     : 17
 blk     : 18
 to      : 19
+
+# League stats
+<fantasy_content xml:lang="en-US" yahoo:uri="http://fantasysports.yahooapis.com/fantasy/v2/league/nba.l.31821" time="21.350145339966ms" copyright="Data provided by 
+Yahoo! and STATS, LLC" refresh_rate="60" xmlns:yahoo="http://www.yahooapis.com/v1/base.rng" xmlns="http://fantasysports.yahooapis.com/fantasy/v2/base.rng">
+ <league>
+  <league_key>395.l.31821</league_key>
+  <league_id>31821</league_id>
+  <name>76ers 2020 NBA Champions</name>
+  <url>https://basketball.fantasysports.yahoo.com/nba/31821</url>
+  <logo_url>https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/57363501974_d022cb.jpg</logo_url>
+  <password/>
+  <draft_status>postdraft</draft_status>
+  <num_teams>12</num_teams>
+  <edit_key>2020-01-31</edit_key>
+  <weekly_deadline>intraday</weekly_deadline>
+  <league_update_timestamp>1580455066</league_update_timestamp>
+  <scoring_type>head</scoring_type>
+  <league_type>private</league_type>
+  <renew/>
+  <renewed/>
+  <iris_group_chat_id/>
+  <short_invitation_url>https://basketball.fantasysports.yahoo.com/nba/31821/invitation?key=1bfa6b056de171aa&amp;ikey=32b6ce3af37ab634</short_invitation_url>       
+  <allow_add_to_dl_extra_pos>1</allow_add_to_dl_extra_pos>
+  <is_pro_league>0</is_pro_league>
+  <is_cash_league>1</is_cash_league>
+  <payment_deadline>2019-11-09</payment_deadline>
+  <entry_fee>25</entry_fee>
+  <current_week>15</current_week>
+  <start_week>1</start_week>
+  <start_date>2019-10-22</start_date>
+  <end_week>23</end_week>
+  <end_date>2020-04-05</end_date>
+  <game_code>nba</game_code>
+  <season>2019</season>
+ </league>
+</fantasy_content>
