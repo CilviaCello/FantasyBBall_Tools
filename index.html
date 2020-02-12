@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Yahoo! Fantasy Basketball Tools</title>
+    <title>Fantasy Basketball Tools | CilviaCello</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="mainstyle.css">
 
@@ -14,11 +14,15 @@
     <nav class="navbar navbar-light bg-dark">
         <span class="navbar-brand text-light">Yahoo! Fantasy Basketball Tools</span>
     </nav>
+
+    <!-- Navbar for additional features
     <nav class="navbar navbar-expand-lg bg-light">
         <span class="navbar-brand">Navigation:</span>
         <a class="nav-item nav-link disabled" href="#">Player Tools</a>
         <a class="nav-item nav-link disabled" href="#">League Tools</a>
     </nav>
+    -->
+
     <div class="container-fluid">
         <div class="jumbotron">
             <h1>Weekly Stats</h1>
@@ -26,21 +30,21 @@
         </div>
     </div>
     <div class="container">
-        <div class="row">
-            <div class="col">
-                <form>
-                    <select class="form-control">
-                        <option>Week 1</option>
-                        <option>Week 2</option>
-                        <option>Week 3</option>
-                    </select>
-                </form>
+        <form>
+            <div class="form-group">
+                <label for="leagueId">Enter League ID:</label>
+                <input type="number" class="form-control" id="leagueId" placeholder="ex. 31821">
             </div>
-            <div class="col">
-                <button class="btn-primary btn-lg">Download .csv file</button>
+            <div class="form-group">
+                <label for="weekSelect">Select Week:</label>
+                <select class="form-control" id="weekSelect">
+                    <option>Week 1</option>
+                    <option>Week 2</option>
+                    <option>Week 3</option>
+                </select>
             </div>
-        </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Download .csv file</button>
+        </form>
     </div>
-
 </body>
 </html>
